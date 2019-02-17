@@ -1,0 +1,115 @@
+/*
+		CS-133S-01 - JavaScript
+		Miki Marshall
+		02/16/12
+		Assignment: Midterm
+		
+		Lighter-than Airlines.
+*/
+
+body 
+{
+  font: 14px arial;
+  color: black;
+  text-align: center;
+  background-image: url("images/hindenburg.jpg");
+  background-size: 100%;
+  background-color: transparent;
+}
+
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#centerdiv
+{
+  /*Having trouble getting simple centering to work for this div... */
+}
+
+#frame1 
+{
+  display: block;
+  float: left;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  margin-left: auto;
+  width: 400px;
+  opacity: 0.8;
+}
+
+#frame2 
+{
+  display: block;
+  float: right;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  margin-right: auto;
+  width: 400px;
+  float: left;
+  opacity: 0.8;
+}
+
+#left 
+{
+  float: left;
+  width: 130px;
+}
+
+div.heading 
+{
+  font: 28px "maiandra gd";
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+div.subheading 
+{
+  font: 22px arial;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+div.field 
+{
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+div.option 
+{
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+div.imageframe 
+{
+  margin-top: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+form input#namefield
+{
+	color: black;
+	font-weight: bold;
+}
+
+form input#destcost,
+form input#ticketcount,
+form input#transporttax,
+form input#subtotal,
+form input#securityfee,
+form input#totalcost
+{
+	color: black;
+	font-weight: bold;
+	text-align: right;
+}

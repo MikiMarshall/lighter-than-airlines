@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<!--
+		CS-133S-01 - JavaScript
+		Miki Marshall
+		02/16/2012
+		Midterm Project
+		
+		Lighter-than Airlines.
+-->
+
+		<title>Miki Marshall: Midterm</title>
+		
+		<!-- The stylesheet -->
+		<link rel="stylesheet" type="text/css" href="midterm.css">
+
+		<!-- My library of common Javascript functions -->
+		<script type="text/javascript" src="commonlib.js">
+		</script>
+
+		<!-- Javascript functions for this page -->
+		<script type="text/javascript" src="midterm.js">
+		</script>
+	</head>
+
+	<body
+		onload="loadData(); setFocus('namefield');">
+
+		<!-- Heading & subheadings -->
+		<div class="heading">
+			Lighter-Than Airlines
+		</div>
+
+		<div class="subheading">
+			Luxurious lighter-than-air travel that will make your next trip a blast
+		</div>
+
+		<div class="center">
+			<!-- Order form -->
+			<div id="frame1">
+				<div id="left">
+				</div>
+
+				<form name="orderform">
+					<div class="field">
+						Ticket Purchaser's Name
+						<input id="namefield" name="namefield" type="text">
+					</div>
+
+					<div class="field">
+						Travelers in Party
+						<input id="ticketcount" name="ticketcount" type="text"
+							onchange="displayTotals();">
+					</div>
+					
+					<br />
+
+					<div class="field">
+						Select Your Destination
+						<span id="destselect" class="field">
+						</span>
+					</div>
+
+					<br />
+
+					<div class="field">
+						Destination Cost
+						<input id="destcost" name="destcost" disabled=true type="text">
+					</div>
+
+					<div class="field">
+						<span id="transtaxlabel">Transportation Tax</span>
+						<input id="transporttax" name="transporttax" disabled=true type="text">
+					</div>
+
+					<br />
+
+					<div class="field">
+						Subtotal
+						<input id="subtotal" name="subtotal" disabled=true type="text">
+					</div>
+
+					<div class="field">
+						<span id="secfeelabel">Security Fee</span>
+						<input id="securityfee" name="securityfee" disabled=true type="text">
+					</div>
+
+					<br />
+
+					<div class="field">
+						Total Ticket Price
+						<input id="totalcost" name="totalcost" disabled=true type="text">
+					</div>
+
+					<br />
+
+					<div class="field">
+						<input value="Make Reservation" onclick="makeReservation();" type="button">
+					</div>
+				</form>
+			</div>
+
+			<!-- A pretty picture and some sales blah-blah-blah -->
+			<div id="frame2">
+				<img  id="dirigiblepic" name="dirigiblepic" src="images/interior.jpg" alt="A picture of the Hindenburg" width="400px" height="250px">
+				
+				<br /><br />
+				
+				<!-- Picture caption -->
+				<section id="caption">
+					Our spacious cabin is appointed in classically luxurious stylings straight from the 1930's, when lighter-than-air travel was in its heyday. <br /><br />
+					Our airships are super-safe. Each ship has been meticulously crafted to be a perfect re-creation of the original Hindenburg design, filled with millions of cubic hectares of the purest hydrogen gas. <br /><br />
+					<i>Please note: This is a non-smoking flight.</i>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
